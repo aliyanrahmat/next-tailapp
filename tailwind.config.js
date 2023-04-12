@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'navimg':"url('../public/background.png')",
+        'service1':"url('../public/service1.png')",
+        'service2':"url('../public/service2.png')",
+        'service3':"url('../public/service3.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
