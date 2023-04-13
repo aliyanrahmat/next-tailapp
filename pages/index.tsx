@@ -1,37 +1,12 @@
 import { Inter } from "next/font/google";
-import Link from "next/link";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-      <div className="flex justify-between p-5 pointer-events-auto bg-green-800 text-white">
-        <div className="capitalize font-bold text-2xl ">
-          <h1 className="pointer">build</h1>
-        </div>
-        <ul className="flex justify-center gap-12 capitalize font-bold text-2xl">
-          <li>
-            <Link href="/navbar" className="">
-              navbar
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/contact">contact</Link>
-          </li>
-          <li>
-            <Link href="/gallery">gallery</Link>
-          </li>
-        </ul>
-        <div className="">
-          <input
-            className="rounded-full p-1"
-            type="text"
-            placeholder="search here"
-          />
-        </div>
-      </div>
       <div className="bg-scroll bg-navimg h-[80vh] bg-contain bg-center justify-center text-center ">
         <h1 className="capitalize font-bold text-green-600  hover:text-green-700  text-center pt-32 text-5xl cursor-pointer">
           professional
@@ -55,7 +30,7 @@ export default function Home() {
             <div className="flex items-center justify-center h-96">
               <div className=" w-60 bg-slate-200 rounded-lg text-center justify-center shadow-2xl ">
                 <div className="bg-service1 h-32 w-32 ml-14 bg-contain  rounded-full items-center"></div>
-                <h1 className="text-3xl font-bold mb-4">Welcome to my app</h1>
+                <h1 className="text-3xl font-bold mb-4">professional workers</h1>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   vitae lectus est. Nulla facilisi. Vestibulum in porttitor
@@ -66,7 +41,7 @@ export default function Home() {
             <div className="flex items-center justify-center h-96">
               <div className="-96 w-60 bg-slate-200 rounded-lg text-center justify-center shadow-2xl ">
                 <div className="bg-service2 h-32 w-32 ml-14 bg-contain  rounded-full items-center"></div>
-                <h1 className="text-3xl font-bold mb-4">Welcome to my app</h1>
+                <h1 className="text-3xl font-bold mb-4">professional workers</h1>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   vitae lectus est. Nulla facilisi. Vestibulum in porttitor
@@ -78,7 +53,7 @@ export default function Home() {
             <div className="flex items-center justify-center h-96">
               <div className=" w-60 bg-slate-200 rounded-lg text-center justify-center shadow-2xl ">
                 <div className="bg-service3 h-32 w-32 ml-14 bg-contain  rounded-full items-center"></div>
-                <h1 className="text-3xl font-bold mb-4">Welcome to my app</h1>
+                <h1 className="text-3xl font-bold mb-4">professional workers</h1>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   vitae lectus est. Nulla facilisi. Vestibulum in porttitor
@@ -90,7 +65,7 @@ export default function Home() {
             <div className="flex items-center justify-center h-96">
               <div className=" w-60 bg-slate-200 rounded-lg text-center justify-center shadow-2xl ">
                 <div className="bg-service3 h-32 w-32 ml-14 bg-contain  rounded-full items-center"></div>
-                <h1 className="text-3xl font-bold mb-4">Welcome to my app</h1>
+                <h1 className="text-3xl font-bold mb-4">professional workers</h1>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   vitae lectus est. Nulla facilisi. Vestibulum in porttitor
@@ -102,7 +77,7 @@ export default function Home() {
         </div>
       </>
       <>
-        <div className="">
+        <div className="capitalize">
           <h1 className="capitalize text-center font-bold text-3xl mt-10 ">
             what our clints says
           </h1>
@@ -121,7 +96,7 @@ export default function Home() {
             <div className="flex items-center justify-center h-96">
               <div className=" w-60  rounded-lg text-center justify-center  ">
                 <div className="bg-service3 h-32 w-32 ml-14 bg-contain  rounded-full items-center"></div>
-                <h1 className="text-3xl font-bold mb-4">kalam</h1>
+                <h1 className="text-3xl font-bold mb-4">aqaib</h1>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   vitae lectus est. Nulla facilisi.
@@ -132,7 +107,7 @@ export default function Home() {
             <div className="flex items-center justify-center h-96">
               <div className=" w-60  rounded-lg text-center justify-center  ">
                 <div className="bg-service3 h-32 w-32 ml-14 bg-contain  rounded-full items-center"></div>
-                <h1 className="text-3xl font-bold mb-4">kalam</h1>
+                <h1 className="text-3xl font-bold mb-4">inam</h1>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   vitae lectus est. Nulla facilisi.
@@ -154,24 +129,23 @@ export default function Home() {
           <div className=" bg-green-700 w-96 h-96 rounded-lg shadow-lg text-center capitalize">
             <h1 className="text-4xl font-bold">get in touch</h1>
             <div className="grid text-center">
-               <input
-              className="rounded-full h-10 w-72 ml-12 mt-10 p-1"
-              type="text"
-              placeholder="enter your name"
-            />
-            <input
-              className="rounded-full h-10 ml-12 w-72 mt-10 p-1"
-              type="text"
-              placeholder="enter your email"
-            />
+              <input
+                className="rounded-full h-10 w-72 ml-12 mt-10 p-1"
+                type="text"
+                placeholder="enter your name"
+              />
+              <input
+                className="rounded-full h-10 ml-12 w-72 mt-10 p-1"
+                type="text"
+                placeholder="enter your email"
+              />
             </div>
-           
-             <button className="cursor-pointer  h-10 bg-white hover:text-white mt-16 font-bold w-32 rounded-full capitalize hover:bg-green-800">
+
+            <button className="cursor-pointer  h-10 bg-white hover:text-white mt-16 font-bold w-32 rounded-full capitalize hover:bg-green-800">
               contact now
             </button>
-</div>
-
           </div>
+        </div>
       </>
     </main>
   );
