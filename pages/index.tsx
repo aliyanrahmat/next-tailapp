@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { faSearch } from "@fortawesome/free-solid-svg-icons"; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,7 +12,7 @@ export default function Home() {
     <main>
       <div className="bg-scroll bg-navimg h-[80vh] bg-contain bg-center justify-center text-center ">
         <h1 className="capitalize font-bold text-green-600  hover:text-green-700  text-center pt-32 text-5xl cursor-pointer">
-          professional
+        professional
         </h1>
         <h1 className="capitalize font-bold text-white  text-center pt-10 text-5xl">
           plasterers in london
@@ -122,8 +125,8 @@ export default function Home() {
         <div className="flex justify-evenly gap-20 h-[70vh]">
           <div className="capitalize  w-52 font-bold text-2xl">
             <h1 className="text-4xl">contact us</h1>
-            <p className="mt-10">main street 12346</p>
-            <p className="mt-7">03112209988</p>
+            <p className="mt-10"><FontAwesomeIcon style={{fontSize:"20px"}} icon={faEnvelope} ></FontAwesomeIcon> main street 12346</p>
+            <p className="mt-7"><FontAwesomeIcon style={{fontSize:"20px"}} icon={faSearch}></FontAwesomeIcon>03112209988</p>
             <p className="mt-7">aliyan ali@gmail.com</p>
           </div>
           <div className=" bg-green-700 w-96 h-96 rounded-lg shadow-lg text-center capitalize">
@@ -142,7 +145,8 @@ export default function Home() {
             </div>
 
             <button className="cursor-pointer  h-10 bg-white hover:text-white mt-16 font-bold w-32 rounded-full capitalize hover:bg-green-800">
-              contact now
+          
+            contact now
             </button>
           </div>
         </div>
