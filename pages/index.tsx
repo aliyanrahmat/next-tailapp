@@ -125,7 +125,7 @@ export default function Home() {
         <div className="flex justify-evenly gap-20 h-[70vh]">
           <div className="capitalize  w-52 font-bold text-2xl">
             <h1 className="text-4xl">contact us</h1>
-            <p className="mt-10"><FontAwesomeIcon style={{fontSize:"20px"}} icon={faEnvelope} ></FontAwesomeIcon> main street 12346</p>
+            <p className="mt-10"> main street 12346</p>
             <p className="mt-7"><FontAwesomeIcon style={{fontSize:"20px"}} icon={faSearch}></FontAwesomeIcon>03112209988</p>
             <p className="mt-7">aliyan ali@gmail.com</p>
           </div>
